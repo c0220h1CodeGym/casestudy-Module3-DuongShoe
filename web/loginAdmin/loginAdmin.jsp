@@ -10,14 +10,13 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Duong shoe's Admin</title>
-    <link rel="stylesheet" href="loginAdmin/vendors/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="loginAdmin/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="loginAdmin/vendors/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="loginAdmin/css/style.css"/>
-    <link rel="shortcut icon" href="loginAdmin/images/favicon.png"/>
+    <link rel="stylesheet" href="style/vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="style/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="style/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="style/css/style.css"/>
+    <link rel="shortcut icon" href="style/images/62581209.jpg"/>
 </head>
 <body>
-<form action="/dashboard" method="post">
 <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">
         <div class="content-wrapper d-flex align-items-center auth">
@@ -25,16 +24,19 @@
                 <div class="col-lg-4 mx-auto">
                     <div class="auth-form-light text-left p-5">
                         <div class="brand-logo">
-                            <img src="loginAdmin/images/logo.svg">
+                            <img src="style/images/logo.svg">
                         </div>
                         <h4>Hello! let's get started</h4>
-                        <h6 class="font-weight-light">Sign in to continue.</h6>
-                        <form class="pt-3">
+                        <h6 class="font-weight-light">Sign in to countinue</h6>
+                        <c:if test="${requestScope.error != null}">
+                            <span class="font-weight-light">${requestScope.error}</span>
+                        </c:if>
+                        <form class="pt-3" method="post">
                             <div class="form-group">
-                                <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
+                                <input type="text" name="username" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                                <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
                             </div>
                             <div class="mt-3">
 <%--                                <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="/admin?action=dashboard">SIGN IN</a>--%>
@@ -47,12 +49,6 @@
                                 </div>
                                 <a href="#" class="auth-link text-black">Forgot password?</a>
                             </div>
-                            <div class="mb-2">
-                                <button type="button" class="btn btn-block btn-facebook auth-form-btn">
-                                    <i class="icon-social-facebook mr-2"></i>Connect using facebook </button>
-                            </div>
-                            <div class="text-center mt-4 font-weight-light"> Don't have an account? <a href="register.html" class="text-primary">Create</a>
-                            </div>
                         </form>
                     </div>
                 </div>
@@ -60,9 +56,8 @@
         </div>
     </div>
 </div>
-</form>
-<script src="loginAdmin/vendors/js/vendor.bundle.base.js"></script>
-<script src="loginAdmin/js/off-canvas.js"></script>
-<script src="loginAdmin/js/misc.js"></script>
+<script src="style/vendors/js/vendor.bundle.base.js"></script>
+<script src="style/js/off-canvas.js"></script>
+<script src="style/js/misc.js"></script>
 </body>
 </html>
