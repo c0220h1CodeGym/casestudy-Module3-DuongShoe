@@ -25,8 +25,7 @@
             <a class="navbar-brand brand-logo" href="../../index.html">
                 <img src="style/images/logo.svg" alt="logo" class="logo-dark"/>
             </a>
-            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="style/images/logo-mini.svg"
-                                                                                 alt="logo"/></a>
+            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="style/images/logo-mini.svg" alt="logo"/></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
             <h5 class="mb-0 font-weight-medium d-none d-lg-flex">Welcome stallar dashboard!</h5>
@@ -218,39 +217,31 @@
                 </li>
             </ul>
         </nav>
-        <!-- partial -->
         <div class="main-panel">
             <div class="content-wrapper">
                 <div class="page-header">
-                    <h3 class="page-title"> Form elements </h3>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Forms</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Form elements</li>
-                        </ol>
-                    </nav>
+                    <h3 class="page-title"> Thêm người dùng </h3>
                 </div>
                 <div class="row">
                     <div class="col-12 grid-margin">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Horizontal Two column</h4>
-                                <form class="form-sample">
-                                    <p class="card-description"> Personal info </p>
+                                <form method="post" class="form-sample">
+                                    <p class="card-description"> Thông tin cá nhân </p>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">First Name</label>
+                                                <label class="col-sm-3 col-form-label">Tên</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control"/>
+                                                    <input type="text" name="firstName" class="form-control"/>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Last Name</label>
+                                                <label class="col-sm-3 col-form-label">Họ và tên đệm</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control"/>
+                                                    <input type="text" name="lastName" class="form-control"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -258,20 +249,20 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Gender</label>
+                                                <label class="col-sm-3 col-form-label">Giới tính</label>
                                                 <div class="col-sm-9">
                                                     <select class="form-control">
-                                                        <option>Male</option>
-                                                        <option>Female</option>
+                                                        <option name="male" value="1">Nam</option>
+                                                        <option name="female" value="0">Nữ</option>
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Date of Birth</label>
+                                                <label class="col-sm-3 col-form-label">Ngày sinh</label>
                                                 <div class="col-sm-9">
-                                                    <input class="form-control" placeholder="dd/mm/yyyy"/>
+                                                    <input type="date" class="form-control" name="dateOfBirth"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -279,101 +270,76 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Category</label>
+                                                <label class="col-sm-3 col-form-label">Số điện thoại</label>
+                                                <div class="col-sm-9">
+                                                    <input type="number" class="form-control" name="phone"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label">Email</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" name="email"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label">Tên đăng nhập</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" name="username"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label">Mật khẩu</label>
+                                                <div class="col-sm-9">
+                                                    <input type="password" class="form-control" name="passowrd"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label">Loại tài khoản</label>
                                                 <div class="col-sm-9">
                                                     <select class="form-control">
-                                                        <option>Category1</option>
-                                                        <option>Category2</option>
-                                                        <option>Category3</option>
-                                                        <option>Category4</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Membership</label>
-                                                <div class="col-sm-4">
-                                                    <div class="form-check">
-                                                        <label class="form-check-label">
-                                                            <input type="radio" class="form-check-input"
-                                                                   name="membershipRadios" id="membershipRadios1"
-                                                                   value="" checked> Free </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-5">
-                                                    <div class="form-check">
-                                                        <label class="form-check-label">
-                                                            <input type="radio" class="form-check-input"
-                                                                   name="membershipRadios" id="membershipRadios2"
-                                                                   value="option2"> Professional </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="card-description"> Address </p>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Address 1</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" class="form-control"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">State</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" class="form-control"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Address 2</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" class="form-control"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Postcode</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" class="form-control"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">City</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" class="form-control"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Country</label>
-                                                <div class="col-sm-9">
-                                                    <select class="form-control">
-                                                        <option>America</option>
-                                                        <option>Italy</option>
-                                                        <option>Russia</option>
-                                                        <option>Britain</option>
+                                                        <option name="admin" value="1">Quản trị viên</option>
+                                                        <option name="user" value="0">Người dùng</option>
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                                    <button class="btn btn-light">Cancel</button>
+                                    <p class="card-description"> Địa chỉ </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label">Địa chỉ</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="address" class="form-control"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card-description"> Ngày khởi tạo </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label">Ngày tạo</label>
+                                                <div class="col-sm-9">
+                                                    <input type="datetime-local" class="form-control" name="createdDate"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary mr-2">Lưu</button>
+                                    <button type="reset" class="btn btn-light">Xóa</button>
                                 </form>
                             </div>
                         </div>

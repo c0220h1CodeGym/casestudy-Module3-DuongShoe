@@ -1,5 +1,7 @@
 package dashboard.controller;
 
+import common.Link;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,8 +12,9 @@ import java.io.IOException;
 
 @WebServlet(name = "dashboardServlet", urlPatterns = "/dashboard")
 public class dashboardServlet extends HttpServlet {
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher rd;
+/*        RequestDispatcher rd;
         try {
             rd = request.getRequestDispatcher("dashboard/dashboard.jsp");
             rd.forward(request, response);
@@ -19,7 +22,7 @@ public class dashboardServlet extends HttpServlet {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -40,7 +43,7 @@ public class dashboardServlet extends HttpServlet {
     private void showCreateUserForm(HttpServletRequest request, HttpServletResponse response) {
         RequestDispatcher rd;
         try {
-            rd = request.getRequestDispatcher("dashboard/createUser.jsp");
+            rd = request.getRequestDispatcher(Link.DASHBOARD_TO_CREATE_FORM_USER);
             rd.forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
@@ -53,7 +56,7 @@ public class dashboardServlet extends HttpServlet {
     private void showUserTable(HttpServletRequest request, HttpServletResponse response) {
         RequestDispatcher rd;
         try {
-            rd = request.getRequestDispatcher("dashboard/viewUser.jsp");
+            rd = request.getRequestDispatcher(Link.DASHBOARD_TO_VIEW_USER);
             rd.forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
