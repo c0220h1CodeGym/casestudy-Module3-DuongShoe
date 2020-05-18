@@ -9,5 +9,5 @@ public class Jdbc {
     public static final String PASSWORD = "admin123";
 
     //query
-    public static final String SELECT_ADMIN_FROM_USER = "select username, password from user where role_id = 1;";
+    public static final String SELECT_ADMIN_FROM_USER = "select username, password from user where role_id = 2;";
 }

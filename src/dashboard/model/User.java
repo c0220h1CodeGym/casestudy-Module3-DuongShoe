@@ -13,13 +13,11 @@ public class User {
     private String address;
     private String username;
     private String password;
-    private String createdDate;
-    private String updatedDate;
 
     public User() {
     }
 
-    public User(int id, int roleId, String firstName, String lastName, int gender, String dateOfBirth, String phone, String address, String email, String username, String password, int status, String createdDate, String updatedDate) {
+    public User(int id, int roleId, String firstName, String lastName, int gender, String dateOfBirth, String phone, String address, String email, String username, String password, int status) {
         this.id = id;
         this.roleId = roleId;
         this.firstName = firstName;
@@ -32,8 +30,6 @@ public class User {
         this.username = username;
         this.password = password;
         this.status = status;
-        this.createdDate = createdDate;
-        this.updatedDate = updatedDate;
     }
 
     public int getId() {
@@ -130,21 +126,5 @@ public class User {
 
     public void setStatus(int status) {
         this.status = status;
-    }
-
-    public String getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(String createdDate) {
-        this.createdDate = createdDate;
-    }
-
-    public String getUpdatedDate() {
-        return updatedDate;
-    }
-
-    public void setUpdatedDate(String updatedDate) {
-        this.updatedDate = updatedDate;
     }
 }

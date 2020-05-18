@@ -327,17 +327,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="card-description"> Ngày khởi tạo </p>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group row">
-                                                <label class="col-sm-3 col-form-label">Ngày tạo</label>
-                                                <div class="col-sm-9">
-                                                    <input type="datetime-local" class="form-control" name="createdDate"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <button type="submit" class="btn btn-primary mr-2">Lưu</button>
                                     <button type="reset" class="btn btn-light">Xóa</button>
                                 </form>
